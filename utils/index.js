@@ -413,8 +413,8 @@ export const nativeCurrenciesImages = {
 
 export const network = process.env.NEXT_PUBLIC_NETWORK_NAME
 const webAddress = process.env.NEXT_PUBLIC_WEB_ADDRESS
-export const devNet = ['mainnet', 'staging', 'xahau'].includes(network) ? false : network
-export const xahauNetwork = network.includes('xahau')
+export const devNet = network && ['mainnet', 'staging', 'xahau'].includes(network) ? false : network
+export const xahauNetwork = network?.includes('xahau')
 
 export const networks = {
   mainnet: {
