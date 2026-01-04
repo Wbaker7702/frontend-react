@@ -34,6 +34,9 @@ export default function Pro({ setPayPeriod }) {
           .
         </p>
         <p>
+          ✅ <b>Enterprise Security</b>: Enhanced security checks and priority resolution for vulnerability reports.
+        </p>
+        <p>
           ✅ <b>Fewer Ads</b>: Focus on what matters most.
         </p>
         <p>

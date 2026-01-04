@@ -99,6 +99,9 @@ export default function Api({ setPayPeriod, setTier, tier }) {
           data.
         </p>
         <p>
+          ✅ <b>Enterprise Security</b>: Advanced security integrations, including SSO and dedicated support channels for enterprise clients.
+        </p>
+        <p>
           ✅ <b>Access to Advanced Features</b>: Subscribing to a paid plan grants access to additional features,
           including specialized endpoints that are not available in the Free tier.
         </p>
@@ -106,6 +109,14 @@ export default function Api({ setPayPeriod, setTier, tier }) {
       <p>Subscribe to our API!</p>
 
       <div className="center">
+        {typeof innerTier === 'string' && innerTier.includes('enterprise') && (
+          <div className="enterprise-info-box">
+            <b>Enterprise Plan Selected</b>
+            <p>
+              Includes advanced security integration, higher rate limits, and dedicated 24/7 support.
+            </p>
+          </div>
+        )}
         <Select
           options={tierOptions}
           getOptionLabel={(option) => <div style={{ width: width > 400 ? '100px' : '160px' }}>{option.label}</div>}
