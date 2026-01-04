@@ -110,9 +110,9 @@ export default function Api({ setPayPeriod, setTier, tier }) {
 
       <div className="center">
         {typeof innerTier === 'string' && innerTier.includes('enterprise') && (
-          <div style={{ marginBottom: '20px', padding: '10px', backgroundColor: '#e0f7fa', borderRadius: '5px', color: '#006064' }}>
+          <div className="enterprise-info-box">
             <b>Enterprise Plan Selected</b>
-            <p style={{ margin: '5px 0' }}>
+            <p>
               Includes advanced security integration, higher rate limits, and dedicated 24/7 support.
             </p>
           </div>
